@@ -1,32 +1,37 @@
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
+      'white': '#FFFFFF',
+      'primary-orange': '#EF7D3F',
+      'primary-navy': '#141630',
+      'primary-blue-light': '#1F2350',
+      'secondary-white': 'rgba(255,255,255,0.8)',
+      'secondary-white-transparent': 'rgba(20,22,48,0.05)',
+      'vivid-orange': '#E15B11',
+      'bright-orange': '#EB9845',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Work Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {
       spacing: {
-        '8xl': '96rem',
-        '9xl': '128rem',
+        '1': '8px',
+        '2': '10px',
+        '3': '12px',
+        '4': '16px',
+        '5': '29px',
+        '6': '32px',
+        '7': '48px',
+        '128': '12.3125rem',
       },
       borderRadius: {
         '4xl': '2rem',
-      }
+      },
+      fontSize: {
+        '1md': '1rem',
+      },
     }
   },
 }

@@ -1,0 +1,48 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans", sans-serif;
+    src: url(../assets/fonts/WorkSans-ExtraBold.ttf);
+}
+
+
+
+
