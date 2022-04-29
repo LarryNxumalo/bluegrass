@@ -10,6 +10,11 @@
       "StackName": "amplify-bluegrass-dev-160106",
       "StackId": "arn:aws:cloudformation:us-east-1:435824734623:stack/amplify-bluegrass-dev-160106/53cf3850-c569-11ec-b5cc-0a0aa4ef271b",
       "AmplifyAppId": "de6p2nflw4g0o"
+    },
+    "categories": {
+      "auth": {
+        "bluegrass089617d2": {}
+      }
     }
   }
 }

@@ -1,17 +1,20 @@
 <template>
-  <div class="home">
-    <Section msg="Welcome to Your Vue.js App"/>
+  <div class="w-full bg-primary-navy h-screen text-white p-24">
+    <Breadcrums/>
+    <Description/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Section from '@/components/Section.vue';
+import Breadcrums from '@/components/Breadcrums.vue';
+import Description from '@/components/Description.vue';
 
 export default {
-  name: 'Home',
+  name: 'rugbyskills',
   components: {
-    Section,
+    Breadcrums,
+    Description,
   },
 };
 </script>

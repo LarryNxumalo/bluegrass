@@ -3,6 +3,83 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn__text{
+    font-size: 16px;
+letter-spacing: 0;
+line-height: 19px;
+text-align: center;
+}
+
+/* .nav::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #e6e6e6;
+    width: 100%;
+} */
+.description-text {
+    color: #FFFFFF;
+    font-family: "HK Grotesk";
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 33px;
+}
+
+
+.breadcrums-text{
+    font-size: 14px;
+    letter-spacing: 0.72px;
+    line-height: 16px;
+}
+
+
+
+
+.orange__btn {
+    height: 39px;
+    width: 199px;
+    color: #FFFFFF;
+    border-radius: 27px;
+    background: linear-gradient(0deg, #E15B11 0%, #EB9845 54%, #EF7D3F 100%);
+}
+
+.are-you-sure {
+    height: 44px;
+    width: 337px;
+    opacity: 0.8;
+    color: #141630;
+    font-family: "Work Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: center;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #fff;
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    height: 198px;
+    width: 523px;
+  }
 @font-face {
     font-family: "Work Sans", sans-serif;
     src: url(../assets/fonts/WorkSans-ExtraLight.ttf);

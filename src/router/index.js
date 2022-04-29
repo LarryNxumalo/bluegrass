@@ -16,17 +16,17 @@ const routes = [
     path: '/basic-skills',
     name: BasicSkills,
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (basicskills.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/BasicSkills.vue'),
+    component: () => import(/* webpackChunkName: "basicskills" */ '../views/BasicSkills.vue'),
   },
   {
     path: '/rugby-skills',
     name: RugbySkills,
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (rugbyskills.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/RugbySkills.vue'),
+    component: () => import(/* webpackChunkName: "rugbyskills" */ '../views/RugbySkills.vue'),
   },
 ];
 

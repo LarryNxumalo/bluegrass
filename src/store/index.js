@@ -5,20 +5,18 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    user: {
-      name: '',
-      email: '',
-      password: '',
-      password_confirmation: '',
-      token: '',
-      id: '',
-      is_admin: false,
-      is_logged_in: false,
-    },
+    modalOpen: false,
   },
   mutations: {
+    toggleModal (state) {
+      // mutate state
+      state.modalOpen ? state.modalOpen = false : state.modalOpen = true;
+    }
   },
   actions: {
+    toggleModal(context){
+      context.commit('toggleModal');
+    }
   },
   modules: {
   },

@@ -24,14 +24,34 @@ module.exports = {
         '5': '29px',
         '6': '32px',
         '7': '48px',
+        '8': '9.813rem',
         '128': '12.3125rem',
+        '200': '2.4375rem',
       },
       borderRadius: {
         '4xl': '2rem',
       },
       fontSize: {
         '1md': '1rem',
+        '2md': ['14px', {
+          letterSpacing: '0',
+          lineHeight: '16px',
+        }],
+        '1xl': ['20px', {
+          letterSpacing: '0',
+          lineHeight: '24px',
+        }],
+        '2xl': ['28px', {
+          letterSpacing: '0',
+          lineHeight: '33px',
+        }],
+        // Or with a default line-height as well
+        '3xl': ['32px', {
+          letterSpacing: '-0.02em',
+          lineHeight: '40px',
+        }],
       },
+
     }
   },
 }
