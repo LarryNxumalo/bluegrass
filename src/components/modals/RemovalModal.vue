@@ -1,5 +1,5 @@
 <template>
-  <div class="backdrop">
+  <div class="modal__container">
     <div class="position-relative modal bg-white p-4 flex flex-col items-center space-y-1">
       <img class="ml-auto cursor-pointer" @click="openModal" src="../../assets/images/icons/modal_close_icon.svg" alt="close">
       <h1 class="are-you-sure">

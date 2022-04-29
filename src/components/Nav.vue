@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex w-full p-4 fixed bg-white">
+  <nav class="flex w-full p-4 fixed bg-white nav">
       <div class="flex items-center space-x-4 w-1/2">
         <img alt="rugby_masters_logo"
         src="../assets/images/icons/header_rugby_master_logo.svg">
@@ -8,7 +8,7 @@
       <div class="flex space-y-4 items-center space-x-4 w-1/2 justify-end">
         <ul class="flex items-center space-x-4 pointer ">
           <li class="flex cursor-pointer">
-          <img v-if="isLoggedIn" alt="rugby_masters_logo"
+          <img v-if="authStatus" alt="rugby_masters_logo"
           class="mr-1"
           src="../assets/images/icons/header_cart_icon.svg">
             Search
@@ -60,6 +60,9 @@ export default {
   computed:{
     modalStatus(){
       return this.$store.state.modalOpen
+    },
+    authStatus(){
+      return this.$store.state.authStatus
     },
   }
 };

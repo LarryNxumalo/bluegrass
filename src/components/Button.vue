@@ -8,7 +8,7 @@
          <slot></slot>
         </button> -->
 
-         <button   class="bg-gradient-to-t from-vivid-orange via-primary-orange to-bright-orange
+         <button  class="bg-gradient-to-t from-vivid-orange via-primary-orange to-bright-orange
         rounded-full text-white px-4 py-2
         w-128 max-h-200">
            <slot class="btn__text"></slot>

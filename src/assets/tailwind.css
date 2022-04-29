@@ -3,12 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn__text{
-    font-size: 16px;
-letter-spacing: 0;
-line-height: 19px;
-text-align: center;
+.nav {
+    z-index: 7;
 }
+
+.progress__tracker{
+    height: 8px;
+    width: 4px;
+    border-radius: 0 5.5px 5.5px 0;
+    background: linear-gradient(0deg, #E15B11 0%, #EB9845 54%, #EF7D3F 100%);
+  }
 
 /* .nav::before {
     content: "";
@@ -32,9 +36,6 @@ text-align: center;
     line-height: 16px;
 }
 
-
-
-
 .orange__btn {
     height: 39px;
     width: 199px;
@@ -55,15 +56,31 @@ text-align: center;
     text-align: center;
 }
 
-.backdrop {
+.toast__container {
+    position: fixed;
+    z-index: 999;
+    top: 2%;
+    right: 2%;
+}
+
+.modal__container {
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    background: rgba( 255, 255, 255, 0.05 );
+    background: rgba( 0, 0, 0, 0.4 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
@@ -77,8 +94,14 @@ text-align: center;
   }
 
   .modal {
-    height: 198px;
-    width: 523px;
+    max-height: 198px;
+    max-width: 523px;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
   }
 @font-face {
     font-family: "Work Sans", sans-serif;
@@ -120,6 +143,35 @@ text-align: center;
     src: url(../assets/fonts/WorkSans-ExtraBold.ttf);
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s, transform 1s;
+  transform: scale(1);
+}
 
+.fade-enter-form,
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(1.02);
+  transform: translateZ(-30%);
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 1s, transform 1s;
+}
 
+.slide-enter-form,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.slideup-enter-active,
+.slideup-leave-active {
+  transition: opacity 1s, transform 1s;
+}
 
+.slideup-enter-form,
+.slideup-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}

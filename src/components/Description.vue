@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between align-baseline border-t border-b border-secondary-white border-opacity-10 py-20">
+  <div class="flex flex-wrap justify-between align-baseline border-t border-b border-secondary-white border-opacity-10 py-20">
     <div class="flex space-x-6">
       <!-- <img src="../assets/images/cobus_coach_image.png" alt=""> -->
       <img class="w-8 h-8" src="../assets/images/class_overview_circle_image.png" alt="">
