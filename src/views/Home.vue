@@ -1,8 +1,11 @@
 <template>
-  <div class="w-full bg-primary-navy h-screen text-white p-24">
+<div>
+  <section class="w-full bg-primary-navy h-screen text-white p-24">
     <Breadcrums/>
     <Description/>
-  </div>
+  </section>
+</div>
+
 </template>
 
 <script>

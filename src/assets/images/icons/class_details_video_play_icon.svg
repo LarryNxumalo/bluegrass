@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A5635555-8CE9-4886-B0C0-87AE4B63797D</title>
+    <defs>
+        <linearGradient x1="45.6510396%" y1="143.877475%" x2="47.8484871%" y2="-75.6690145%" id="linearGradient-1">
+            <stop stop-color="#E15B11" offset="0%"></stop>
+            <stop stop-color="#EB9845" offset="54%"></stop>
+            <stop stop-color="#EF7D3F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Components-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rugby-Masters---Components-Guide" transform="translate(-731.000000, -2374.000000)">
+            <g id="class_details_video_play_icon" transform="translate(731.000000, 2374.000000)">
+                <rect id="Rectangle" x="0.5" y="0" width="19" height="19"></rect>
+                <polygon id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero" points="17 8.99990762 5 17 5 1"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

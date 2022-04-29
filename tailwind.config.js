@@ -36,6 +36,11 @@ module.exports = {
         '2md': ['14px', {
           letterSpacing: '0',
           lineHeight: '16px',
+          align: 'center',
+        }],
+        '3md': ['12px', {
+          letterSpacing: 'normal',
+          lineHeight: '16px',
         }],
         '1xl': ['20px', {
           letterSpacing: '0',

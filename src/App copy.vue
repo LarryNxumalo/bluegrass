@@ -1,31 +1,30 @@
 <template>
 <div id="app">
-  <button @click="openModal">Open Modal</button>
+  <TopBar />
   <Nav />
   <router-view v-slot="{Component}" >
    <transition name="slide" mode="out-in">
-     <component :is="Component" :key="$route.path"></component>
+     <TopBar :is="Component" :key="$route.path"/>
     </transition>
   </router-view>
-  <Teleport to="body">
-     <transition name="slide" mode="out-in">
-      <RemovalModal  v-if="modalStatus"/>
-     </transition>
-  </Teleport>
 
-  <Toast  />
+ <amplify-authenticator>
 
-  <amplify-authenticator>
+    <p>{{sortedClasses}}?</p>
+        <TopBar />
+        <Nav />
+         <router-view />
+        <p>Authenticated View</p>
+        <p>Authenticated View</p>
+        <p>Authenticated View</p>
+         <!-- <p>{{AuthState}}</p> -->
   </amplify-authenticator>
-</div>
+  </div>
 </template>
-
 <script>
 
-import BasicSkills from './views/BasicSkills.vue';
-import Toast from './components/Toast.vue';
-import Nav from './components/Nav.vue';
-import RemovalModal from  './components/modals/RemovalModal.vue';
+import Nav from './components/Breadcrums.vue';
+import TopBar from './components/Nav.vue';
 import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
 
 import { API, graphqlOperation } from 'aws-amplify';
@@ -39,10 +38,9 @@ export default {
 
   name: 'home',
   components: {
+    TopBar,
     Nav,
-    RemovalModal,
-    BasicSkills,
-    Toast
+
   },
    data() {
     return {
@@ -52,23 +50,20 @@ export default {
     }
   },
   methods: {
-    openModal() {
-      console.log('toggling open close')
-      console.log(this.$store.state.modalOpen.backdrop)
-      console.log(this.$store.state.modalOpen.toast)
-      console.log(this.$store.state.modalOpen.removal)
-      this.$store.commit('toggleModalR')
+    signOut(){
+      console.log(AuthState)
     },
   },
   created(){
-    // console.log(AuthState.Loading, 'this is our auth state')
+    console.log(AuthState.Loading, 'this is our auth state')
+    this.loading = AuthState.Loading;
     //auth state
     onAuthUIStateChange((state, user) => {
       //set current user and load payload after sign in
       if(state === AuthState.SignedIn){
         this.user = user;
         this.getData();
-        // console.log(this.user)
+        console.log(this.user)
       }
     });
 
@@ -78,7 +73,6 @@ export default {
     //     if(newclassData){
     //       //skin our own mutations and duplicates
     //       if(this.rugbyClasses.some(r => r.id === newclassData.id)){
-
     //        return this.rugbyClasses = [newclassData, ...this.rugbyClasses];
     //       }
     //     }
@@ -86,17 +80,13 @@ export default {
     // });
   },
   computed:{
-    modalStatus(){
-      console.log(this.$store.state.modalOpen.removal, 'un')
-      return this.$store.state.modalOpen.removal
-    },
     sortedClasses(){
       let rugbyClasses = [...this.rugbyClasses]
       return rugbyClasses.sort((a,b) => {
         return a.name > b.name ? 1 : -1
       })
     }
-  },
+  }
 };
 </script>
 
@@ -110,6 +100,6 @@ export default {
   .slide-enter-form,
   .slide-leave-to {
     opacity: 0;
-    transform: translateZ(-30%);
+    transform: translateX(-30%);
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full bg-primary-navy h-screen text-white p-24">
+  <section class="w-full bg-primary-navy h-screen text-white p-24">
     <Breadcrums/>
-  </div>
+  </section>
 </template>
 
 <script>
