@@ -2,6 +2,23 @@
 ```
 https://github.com/LarryNxumalo/bluegrass
 ```
+# Tech used:
+
+```
+Used:
+
+Vue
+Vuex - state managment
+Tailwind CSS - styling
+Babel 
+
+Omitted:
+
+GraphQL API
+DynamoDB
+AWS Amplify Authentication
+
+```
 # How long it took me for the assessment
 
 ```
