@@ -1,0 +1,6 @@
+type Rugbyclass @model {
+  id: ID!
+  name: String!
+  description: String!
+  featuredVideo: String!
+}

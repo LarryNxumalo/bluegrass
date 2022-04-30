@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>89937226-3611-432C-A5A9-FC2CBBAD1390</title>
+    <defs>
+        <linearGradient x1="42.2685149%" y1="143.877475%" x2="46.1750882%" y2="-75.6690145%" id="linearGradient-1">
+            <stop stop-color="#E15B11" offset="0%"></stop>
+            <stop stop-color="#EB9845" offset="54%"></stop>
+            <stop stop-color="#EF7D3F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Components-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rugby-Masters---Components-Guide" transform="translate(-733.000000, -2466.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="purchased-class_play_button" transform="translate(733.000000, 2466.000000)">
+                <path d="M36.6666667,2.4158453e-12 C56.917,2.4158453e-12 73.3333333,16.4162333 73.3333333,36.6666667 C73.3333333,56.917 56.917,73.3333333 36.6666667,73.3333333 C16.4162333,73.3333333 5.96855898e-13,56.917 5.96855898e-13,36.6666667 C5.96855898e-13,16.4162333 16.4162333,2.4158453e-12 36.6666667,2.4158453e-12 Z M36.6666667,6.66666667 C20.0981333,6.66666667 6.66666667,20.0981333 6.66666667,36.6666667 C6.66666667,53.2353333 20.0981333,66.6666667 36.6666667,66.6666667 C53.2353333,66.6666667 66.6666667,53.2353333 66.6666667,36.6666667 C66.6666667,20.0981333 53.2353333,6.66666667 36.6666667,6.66666667 Z M30,22.2329 L50,36.6666667 L30,51.1003333 L30,22.2329 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
