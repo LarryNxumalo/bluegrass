@@ -1,6 +1,6 @@
 <template>
 <div>
-  <section class="w-full bg-primary-navy h-screen text-white p-24">
+  <section class="w-full bg-primary-navy h-screen text-white  p-4 md:p-24">
     <Breadcrums/>
     <main>
 

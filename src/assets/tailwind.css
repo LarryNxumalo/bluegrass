@@ -14,13 +14,17 @@
     background: linear-gradient(0deg, #E15B11 0%, #EB9845 54%, #EF7D3F 100%);
   }
 
-/* .nav::before {
-    content: "";
-    display: block;
-    height: 1px;
-    background: #e6e6e6;
-    width: 100%;
-} */
+.banner__img {
+  background-image: url('../assets/images/home_ready_to_go_image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 292px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
 .description-text {
     color: #FFFFFF;
     font-family: "HK Grotesk";
@@ -84,7 +88,6 @@
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
-    border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     color: #fff;
     transition: all 1s ease-in-out;
@@ -174,4 +177,17 @@
 .slideup-leave-to {
   opacity: 0;
   transform: translateY(-100%);
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(100%);
+  opacity: 0;
 }

@@ -26,7 +26,6 @@ export default {
   },
   methods: {
     openModal() {
-      console.log(this.$store.state.modalOpen.removal, 'modal component')
       this.$store.commit('toggleModalR')
     },
   }

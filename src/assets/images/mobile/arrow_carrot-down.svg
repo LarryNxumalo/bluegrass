@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="9px" viewBox="0 0 16 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>80554D97-A2D7-40E6-8EB7-F5C71B294621</title>
+    <defs>
+        <linearGradient x1="42.2685149%" y1="80.127793%" x2="46.1750882%" y2="9.66945142%" id="linearGradient-1">
+            <stop stop-color="#E15B11" offset="0%"></stop>
+            <stop stop-color="#EB9845" offset="54%"></stop>
+            <stop stop-color="#EF7D3F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Mobile-UI-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Class-Details" transform="translate(-347.000000, -1078.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(20.000000, 1046.000000)">
+                <g id="arrow_carrot-down" transform="translate(335.000000, 36.500000) rotate(180.000000) translate(-335.000000, -36.500000) translate(327.000000, 32.000000)">
+                    <path d="M13.782,0.8 L8,6.582 L2.218,0.8 C1.828,0.41 1.194,0.41 0.804,0.8 C0.414,1.19 0.414,1.824 0.804,2.214 L7.29,8.7 C7.486,8.896 7.744,8.994 8,8.992 C8.258,8.992 8.514,8.896 8.71,8.7 L15.196,2.214 C15.586,1.824 15.586,1.19 15.196,0.8 C14.806,0.41 14.172,0.41 13.782,0.8 L13.782,0.8 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

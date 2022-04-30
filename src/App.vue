@@ -1,9 +1,14 @@
 <template>
   <div id="app" class="position-relative">
-    <button @click="openModalR">Open Modal</button>
-    <button @click="openModalT">Open Toast</button>
+    <button class="bg-gradient-to-t from-vivid-orange via-primary-orange to-bright-orange
+        rounded-full text-white px-4 py-1
+        max-h-200" @click="openModalR">Remove Payment Modal</button>
+    <button class="bg-gradient-to-t from-primary-blue-light to-primary-navy
+        rounded-full text-white px-4 py-1
+        max-h-200" @click="openModalT">Password Change Modal</button>
     <Nav />
     <router-view />
+
     <Teleport to="body">
       <transition name="fade" mode="out-in">
         <Backdrop  v-if="modalBackdrop === true "/>
@@ -19,8 +24,14 @@
           <Toast v-if="modalStatus === 'toast' "/>
       </transition>
     </Teleport>
-    <amplify-authenticator>
-    </amplify-authenticator>
+    <Teleport to="body">
+      <transition name="slide-fade" mode="out-in">
+          <MobileNav v-if="modalStatus === 'mobile-nav' "/>
+      </transition>
+    </Teleport>
+    <Footer/>
+    <!-- <amplify-authenticator>
+    </amplify-authenticator> -->
   </div>
 </template>
 
@@ -31,6 +42,9 @@ import Toast from './components/Toast.vue';
 import Nav from './components/Nav.vue';
 import RemovalModal from  './components/modals/RemovalModal.vue';
 import Backdrop from  './components/modals/Backdrop.vue';
+import MobileNav from  './components/modals/MobileNav.vue';
+import Footer from  './components/Footer.vue';
+
 
 import "@aws-amplify/ui-vue/styles.css";
 
@@ -42,6 +56,8 @@ export default {
     Toast,
     RemovalModal,
     Backdrop,
+    MobileNav,
+    Footer,
   },
    data() {
     return {

@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     userAuth: {
-      isLoggedIn: false,
+      isLoggedIn: true,
       user: {
         id: '1',
         name: 'Larry Doe',
@@ -116,12 +116,13 @@ export default new Vuex.Store({
   mutations: {
     toggleModalB (state) {
       // mutate state
+      console.log('toggleModalB');
       if(state.modalOpen.backdrop === false && state.modalOpen.status === '') {
         state.modalOpen.status = ''
         state.modalOpen.backdrop = false
       } else {
         state.modalOpen.status = ''
-        state.modalOpen.backdrop = true
+        state.modalOpen.backdrop = false
       }
     },
     toggleModalT (state) {
@@ -173,6 +174,17 @@ export default new Vuex.Store({
       // }
       // )
 
+
+    },
+    toggleModalMobile (state) {
+      // mutate state
+      if(state.modalOpen.status === '') {
+        state.modalOpen.status = 'mobile-nav'
+         state.modalOpen.backdrop = false
+      } else {
+        state.modalOpen.status = ''
+        state.modalOpen.backdrop = false
+      }
     },
   },
   actions: {
@@ -187,6 +199,9 @@ export default new Vuex.Store({
     },
     toggleModalCart(context){
       context.commit('toggleModalCart');
+    },
+    toggleModalMobile(context){
+      context.commit('toggleModalMobile');
     },
   },
   modules: {
